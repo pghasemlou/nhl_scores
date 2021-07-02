@@ -1,0 +1,3169 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20192.19.0718.1543                               -->
+<workbook original-version='18.1' source-build='2019.2.2 (20192.19.0718.1543)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts ignorable='true' predowngraded='true' />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='nhl' inline='true' name='federated.0aunur11f5n60c1dshal60mqpzk9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='nhl_all' name='textscan.1ud3j1w0nne4lp1dn9wb41plqwxu'>
+            <connection class='textscan' directory='C:/Users/Pedram/Desktop/python/nhl' filename='nhl.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1ud3j1w0nne4lp1dn9wb41plqwxu' name='nhl.csv' table='[nhl#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='season' ordinal='0' />
+            <column datatype='string' name='era' ordinal='1' />
+            <column datatype='string' name='s_type' ordinal='2' />
+            <column datatype='date' name='date' ordinal='3' />
+            <column datatype='string' name='v_team' ordinal='4' />
+            <column datatype='integer' name='v_goals' ordinal='5' />
+            <column datatype='string' name='h_team' ordinal='6' />
+            <column datatype='integer' name='h_goals' ordinal='7' />
+            <column datatype='integer' name='attendance' ordinal='8' />
+            <column datatype='string' name='notes' ordinal='9' />
+            <column datatype='integer' name='max' ordinal='10' />
+            <column datatype='string' name='final_score' ordinal='11' />
+            <column datatype='string' name='winner' ordinal='12' />
+            <column datatype='string' name='type' ordinal='13' />
+            <column datatype='integer' name='goals' ordinal='14' />
+            <column datatype='string' name='goals_axis' ordinal='15' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[season]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>season</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>era</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[era]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>era</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>s_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[s_type]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>s_type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>v_team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[v_team]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>v_team</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>v_goals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[v_goals]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>v_goals</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>h_team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[h_team]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>h_team</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>h_goals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[h_goals]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>h_goals</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>attendance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[attendance]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>attendance</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>notes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[notes]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>notes</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>max</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[max]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>max</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>final_score</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[final_score]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>final_score</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winner</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[winner]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>winner</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>goals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[goals]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>goals</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>goals_axis</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[goals_axis]</local-name>
+            <parent-name>[nhl.csv]</parent-name>
+            <remote-alias>goals_axis</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[sum:h_goals:qk]&quot;' value='Home' />
+          <alias key='&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[sum:v_goals:qk]&quot;' value='Visitor' />
+        </aliases>
+      </column>
+      <column caption='Blank' datatype='string' name='[Calculation_137641281315819541]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot; &quot;' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Attendance' datatype='integer' name='[attendance]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Era' datatype='string' name='[era]' role='dimension' type='nominal' />
+      <column caption='Final Score' datatype='string' name='[final_score]' role='dimension' type='nominal' />
+      <column caption='Goals' datatype='integer' name='[goals]' role='measure' type='quantitative' />
+      <column caption='Goals Axis' datatype='string' name='[goals_axis]' role='dimension' type='nominal' />
+      <column caption='H Goals' datatype='integer' name='[h_goals]' role='measure' type='quantitative' />
+      <column caption='H Team' datatype='string' name='[h_team]' role='dimension' type='nominal' />
+      <column caption='Max' datatype='integer' name='[max]' role='measure' type='quantitative' />
+      <column caption='Notes' datatype='string' name='[notes]' role='dimension' type='nominal' />
+      <column caption='S Type' datatype='string' name='[s_type]' role='dimension' type='nominal' />
+      <column caption='Season' datatype='string' name='[season]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column caption='V Goals' datatype='integer' name='[v_goals]' role='measure' type='quantitative' />
+      <column caption='V Team' datatype='string' name='[v_team]' role='dimension' type='nominal' />
+      <column caption='Winner' datatype='string' name='[winner]' role='dimension' type='nominal' />
+      <column-instance column='[Calculation_137641281315819541]' derivation='Count' name='[cnt:Calculation_137641281315819541:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[type]' derivation='Count' name='[cnt:type:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[winner]' derivation='Count' name='[cnt:winner:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[attendance]' derivation='Sum' name='[diff:sum:attendance:qk]' pivot='key' type='quantitative'>
+        <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+          <address>
+            <value>-1</value>
+          </address>
+        </table-calc>
+      </column-instance>
+      <column-instance column='[Calculation_137641281315819541]' derivation='Min' name='[min:Calculation_137641281315819541:nk]' pivot='key' type='nominal' />
+      <column-instance column='[attendance]' derivation='Min' name='[min:attendance:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[goals]' derivation='Min' name='[min:goals:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_137641281315819541]' derivation='None' name='[none:Calculation_137641281315819541:nk]' pivot='key' type='nominal' />
+      <column-instance column='[season]' derivation='None' name='[none:season:nk]' pivot='key' type='nominal' />
+      <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+      <column-instance column='[winner]' derivation='None' name='[none:winner:nk]' pivot='key' type='nominal' />
+      <column-instance column='[type]' derivation='Count' name='[pcto:cnt:type:qk:1]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Field' type='PctTotal'>
+          <order field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]' />
+          <order field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]' />
+        </table-calc>
+      </column-instance>
+      <column-instance column='[type]' derivation='Count' name='[pcto:cnt:type:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[winner]' derivation='Count' name='[pcto:cnt:winner:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[attendance]' derivation='Sum' name='[pcto:sum:attendance:qk:1]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:season:nk]' ordering-type='Field' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[attendance]' derivation='Sum' name='[pcto:sum:attendance:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='' ordering-type='Field' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[attendance]' derivation='Sum' name='[pcto:sum:attendance:qk:3]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.0aunur11f5n60c1dshal60mqpzk9].[season]' ordering-type='Field' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[attendance]' derivation='Sum' name='[pcto:sum:attendance:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[goals]' derivation='Sum' name='[pcto:sum:goals:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='CellInPane' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[goals]' derivation='Sum' name='[pcto:sum:goals:qk:4]' pivot='key' type='quantitative'>
+        <table-calc ordering-field='[federated.0aunur11f5n60c1dshal60mqpzk9].[season]' ordering-type='Field' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[goals]' derivation='Sum' name='[pcto:sum:goals:qk:5]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[goals]' derivation='Sum' name='[pcto:sum:goals:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[h_goals]' derivation='Sum' name='[pcto:sum:h_goals:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[v_goals]' derivation='Sum' name='[pcto:sum:v_goals:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Columns' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[v_goals]' derivation='Sum' name='[pcto:sum:v_goals:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[attendance]' derivation='Sum' name='[sum:attendance:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[goals]' derivation='Sum' name='[sum:goals:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[h_goals]' derivation='Sum' name='[sum:h_goals:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[max]' derivation='Sum' name='[sum:max:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[v_goals]' derivation='Sum' name='[sum:v_goals:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.580605' measure-ordering='alphabetic' measure-percentage='0.419395' rowDisplayCount='100000' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[attr:winner:nk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:Calculation_137641281315819541:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:type:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:winner:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[diff:cnt:type:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[diff:sum:attendance:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[min:attendance:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[min:Calculation_137641281315819541:nk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[min:goals:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[min:type:nk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281323876379:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281323925532:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281324077085:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_437412132231827463:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_437412132232581130:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_437412132232626187:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[none:winner:nk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk:1]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk:10]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk:11]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk:4]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk:5]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk:6]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk:7]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk:8]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk:9]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:winner:qk:5]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:winner:qk:7]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:winner:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:sum:attendance:qk:1]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:sum:attendance:qk:2]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:sum:attendance:qk:3]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:sum:attendance:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[sum:attendance:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[sum:Calculation_137641281324191775:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[sum:Calculation_137641281324204064:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[sum:Calculation_137641281326358563:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[sum:Calculation_137641281326370852:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[sum:Calculation_137641281326460966:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[sum:Calculation_137641281326477351:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[sum:Calculation_437412132228820995:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[sum:Calculation_437412132228845572:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_137641281324105758:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_437412132219072513:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_437412132231884808:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_437412132231950345:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496867643396:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868745227:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496873386003:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[sum:Number of Records:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[sum:max:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[sum:h_goals:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_227431804548481039:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:sum:h_goals:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_227431804307968002:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation2:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:sum:v_goals:qk:2]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:sum:v_goals:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_227431804308140035:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_227431804308180996:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation1:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:sum:goals:qk:2]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:sum:goals:qk:4]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:sum:goals:qk:5]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:sum:goals:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[sum:goals:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[sum:v_goals:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_227431804548513808:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:winner:nk]' type='palette'>
+            <map to='#86bcb6'>
+              <bucket>&quot;Home&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Visitor&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:type:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;REG&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;SO&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;4OT&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2OT&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;OT&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;3OT&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='pie_playoffs'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nhl' name='federated.0aunur11f5n60c1dshal60mqpzk9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0aunur11f5n60c1dshal60mqpzk9'>
+            <column caption='Blank' datatype='string' name='[Calculation_137641281315819541]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot; &quot;' />
+            </column>
+            <column caption='MIN(0)' datatype='integer' name='[Calculation_860750496868728842]' role='measure' type='quantitative' user:unnamed='Sheet 2'>
+              <calculation class='tableau' formula='MIN(0)' />
+            </column>
+            <column caption='MIN(1)' datatype='integer' name='[Calculation_860750496868745227]' role='measure' type='quantitative' user:unnamed='Sheet 2'>
+              <calculation class='tableau' formula='MIN(1)' />
+            </column>
+            <column-instance column='[type]' derivation='Count' name='[cnt:type:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[winner]' derivation='Count' name='[cnt:winner:qk]' pivot='key' type='quantitative' />
+            <column caption='Era' datatype='string' name='[era]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_137641281315819541]' derivation='None' name='[none:Calculation_137641281315819541:nk]' pivot='key' type='nominal' />
+            <column-instance column='[era]' derivation='None' name='[none:era:nk]' pivot='key' type='nominal' />
+            <column-instance column='[s_type]' derivation='None' name='[none:s_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[winner]' derivation='None' name='[none:winner:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='Count' name='[pcto:cnt:type:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[winner]' derivation='Count' name='[pcto:cnt:winner:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='S Type' datatype='string' name='[s_type]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_860750496868728842]' derivation='User' name='[usr:Calculation_860750496868728842:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_860750496868745227]' derivation='User' name='[usr:Calculation_860750496868745227:qk]' pivot='key' type='quantitative' />
+            <column caption='Winner' datatype='string' name='[winner]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:era:nk]' filter-group='3'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:era:nk]' member='&quot;3on3-SO&quot;' />
+              <groupfilter function='member' level='[none:era:nk]' member='&quot;4on4-SO&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:s_type:nk]' filter-group='5'>
+            <groupfilter function='member' level='[none:s_type:nk]' member='&quot;Playoffs&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;REG&quot;</bucket>
+              <bucket>&quot;4OT&quot;</bucket>
+              <bucket>&quot;3OT&quot;</bucket>
+              <bucket>&quot;2OT&quot;</bucket>
+              <bucket>&quot;OT&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <manual-sort column='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:winner:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Home&quot;</bucket>
+              <bucket>&quot;Visitor&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:era:nk]</column>
+            <column>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:s_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]' value='407' />
+            <format attr='display' class='0' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868745227:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868728842:qk]' scope='rows' value='false' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]' value='757' />
+            <format attr='cell-w' value='272' />
+            <format attr='cell-h' value='272' />
+            <format attr='cell' value='34' />
+            <format attr='cell-q' value='170' />
+            <format attr='text-format' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk]' value='p0.0%' />
+            <format attr='text-format' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:winner:qk]' value='p0.0%' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]' value='false' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='fill-color' id='annotation_1' value='#00000000' />
+            <format attr='stroke-size' id='annotation_1' value='0' />
+            <format attr='line-visibility' id='annotation_1' value='off' />
+            <format attr='fill-color' id='annotation_2' value='#00000000' />
+            <format attr='stroke-size' id='annotation_2' value='0' />
+            <format attr='line-visibility' id='annotation_2' value='off' />
+            <format attr='fill-color' id='annotation_3' value='#00000000' />
+            <format attr='stroke-size' id='annotation_3' value='0' />
+            <format attr='line-visibility' id='annotation_3' value='off' />
+            <format attr='fill-color' id='annotation_4' value='#00000000' />
+            <format attr='stroke-size' id='annotation_4' value='0' />
+            <format attr='line-visibility' id='annotation_4' value='off' />
+            <format attr='fill-color' id='annotation_5' value='#00000000' />
+            <format attr='stroke-size' id='annotation_5' value='0' />
+            <format attr='line-visibility' id='annotation_5' value='off' />
+            <format attr='fill-color' id='annotation_6' value='#00000000' />
+            <format attr='fill-color' id='annotation_7' value='#00000000' />
+            <format attr='fill-color' id='annotation_8' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Type:&#9;</run>
+                <run bold='true'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% of Total Count of Type along Table (Across):&#9;</run>
+                <run bold='true'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='809' />
+                <format attr='maxheight' value='809' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='10' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868745227:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]' />
+              <wedge-size column='[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk]' />
+              <lod column='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:type:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Type:&#9;</run>
+                <run bold='true'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% of Total Count of Type along Table (Across):&#9;</run>
+                <run bold='true'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:type:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='283' />
+                <format attr='maxwidth' value='283' />
+                <format attr='minheight' value='304' />
+                <format attr='maxheight' value='304' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='11' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868728842:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:winner:nk]' />
+              <wedge-size column='[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:winner:qk]' />
+              <lod column='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:winner:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Type:&#9;</run>
+                <run bold='true'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:winner:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% of Total Count of Type along Table (Across):&#9;</run>
+                <run bold='true'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:winner:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4832596778869629' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='283' />
+                <format attr='maxwidth' value='283' />
+                <format attr='minheight' value='304' />
+                <format attr='maxheight' value='304' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868745227:qk] + [federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868728842:qk])</rows>
+        <cols>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</cols>
+        <annotations>
+          <annotation class='point' id='1' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontname='Segoe UI' fontsize='30'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontname='Segoe UI' fontsize='30'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:type:qk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontname='Segoe UI' fontsize='30' italic='true'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868745227:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868745227:qk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot; &quot;</value>
+                    <value>&quot;SO&quot;</value>
+                    <value>1</value>
+                    <value>0.12189936215450035</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='52' y='102' />
+          </annotation>
+          <annotation class='point' id='2' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontname='Segoe UI' fontsize='30'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontname='Segoe UI' fontsize='30'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:type:qk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontname='Segoe UI' fontsize='30' italic='true'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868745227:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:type:qk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868745227:qk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>1757</value>
+                    <value>&quot; &quot;</value>
+                    <value>&quot;OT&quot;</value>
+                    <value>1</value>
+                    <value>0.11320146897751433</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='79' y='124' />
+          </annotation>
+          <annotation class='point' id='3' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontname='Segoe UI' fontsize='30'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontname='Segoe UI' fontsize='30'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:type:qk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontname='Segoe UI' fontsize='30' italic='true'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868745227:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:type:qk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868745227:qk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>11872</value>
+                    <value>&quot; &quot;</value>
+                    <value>&quot;REG&quot;</value>
+                    <value>1</value>
+                    <value>0.76489916886798526</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-123' y='-188' />
+          </annotation>
+          <annotation class='point' id='4' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontname='Segoe UI' fontsize='30'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[none:winner:nk]&gt;</run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run fontalignment='1' fontname='Segoe UI' fontsize='30'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:winner:qk]&gt;</run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run bold='true' fontalignment='1' fontname='Segoe UI' fontsize='30' italic='true'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:winner:qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868728842:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:winner:qk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:winner:nk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868728842:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>6985</value>
+                    <value>&quot; &quot;</value>
+                    <value>&quot;Visitor&quot;</value>
+                    <value>0</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='144' y='-12' />
+          </annotation>
+          <annotation class='point' id='5' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontname='Segoe UI' fontsize='30'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[none:winner:nk]&gt;</run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run fontalignment='1' fontname='Segoe UI' fontsize='30'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:winner:qk]&gt;</run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run bold='true' fontalignment='1' fontname='Segoe UI' fontsize='30' italic='true'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:winner:qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868728842:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:winner:qk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:winner:nk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868728842:qk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:winner:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>8536</value>
+                    <value>&quot; &quot;</value>
+                    <value>&quot;Home&quot;</value>
+                    <value>0</value>
+                    <value>0.5499645641389086</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-151' y='-27' />
+          </annotation>
+          <annotation class='point' id='6' mark-position='1' pullback='0' text-width='112'>
+            <formatted-text>
+              <run bold='true' fontcolor='#f5f5f5' fontname='Segoe UI' fontsize='30'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#f5f5f5' fontname='Segoe UI' fontsize='30'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:type:qk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#f5f5f5' fontname='Segoe UI' fontsize='30' italic='true'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868745227:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:type:qk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868745227:qk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>44</value>
+                    <value>&quot; &quot;</value>
+                    <value>&quot;2OT&quot;</value>
+                    <value>1</value>
+                    <value>0.038938053097345132</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-24' y='-173' />
+          </annotation>
+          <annotation class='point' id='7' mark-position='1' pullback='0' text-width='110'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#f5f5f5' fontname='Segoe UI' fontsize='30'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]&gt;</run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run fontalignment='1' fontcolor='#f5f5f5' fontname='Segoe UI' fontsize='30'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:type:qk]&gt;</run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run bold='true' fontalignment='1' fontcolor='#f5f5f5' fontname='Segoe UI' fontsize='30' italic='true'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868745227:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:type:qk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868745227:qk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>10</value>
+                    <value>&quot; &quot;</value>
+                    <value>&quot;3OT&quot;</value>
+                    <value>1</value>
+                    <value>0.0088495575221238937</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-143' y='-66' />
+          </annotation>
+          <annotation class='point' id='8' mark-position='1' pullback='0' text-width='108'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#f5f5f5' fontname='Segoe UI' fontsize='30'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]&gt;</run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run fontalignment='1' fontcolor='#f5f5f5' fontname='Segoe UI' fontsize='30'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:type:qk]&gt;</run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run bold='true' fontalignment='1' fontcolor='#f5f5f5' fontname='Segoe UI' fontsize='30' italic='true'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868745227:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:type:qk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868745227:qk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>2</value>
+                    <value>&quot; &quot;</value>
+                    <value>&quot;4OT&quot;</value>
+                    <value>1</value>
+                    <value>0.0017699115044247787</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-110' y='139' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{D79EBA21-BC9E-4055-AAC3-860D3759397C}' />
+    </worksheet>
+    <worksheet name='pie_regular'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nhl' name='federated.0aunur11f5n60c1dshal60mqpzk9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0aunur11f5n60c1dshal60mqpzk9'>
+            <column caption='Blank' datatype='string' name='[Calculation_137641281315819541]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot; &quot;' />
+            </column>
+            <column caption='MIN(0)' datatype='integer' name='[Calculation_860750496868728842]' role='measure' type='quantitative' user:unnamed='Sheet 2'>
+              <calculation class='tableau' formula='MIN(0)' />
+            </column>
+            <column caption='MIN(1)' datatype='integer' name='[Calculation_860750496868745227]' role='measure' type='quantitative' user:unnamed='Sheet 2'>
+              <calculation class='tableau' formula='MIN(1)' />
+            </column>
+            <column-instance column='[type]' derivation='Count' name='[cnt:type:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[winner]' derivation='Count' name='[cnt:winner:qk]' pivot='key' type='quantitative' />
+            <column caption='Era' datatype='string' name='[era]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_137641281315819541]' derivation='None' name='[none:Calculation_137641281315819541:nk]' pivot='key' type='nominal' />
+            <column-instance column='[era]' derivation='None' name='[none:era:nk]' pivot='key' type='nominal' />
+            <column-instance column='[s_type]' derivation='None' name='[none:s_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[winner]' derivation='None' name='[none:winner:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='Count' name='[pcto:cnt:type:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[winner]' derivation='Count' name='[pcto:cnt:winner:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='S Type' datatype='string' name='[s_type]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_860750496868728842]' derivation='User' name='[usr:Calculation_860750496868728842:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_860750496868745227]' derivation='User' name='[usr:Calculation_860750496868745227:qk]' pivot='key' type='quantitative' />
+            <column caption='Winner' datatype='string' name='[winner]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:era:nk]' filter-group='3'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:era:nk]' member='&quot;3on3-SO&quot;' />
+              <groupfilter function='member' level='[none:era:nk]' member='&quot;4on4-SO&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:s_type:nk]' filter-group='4'>
+            <groupfilter function='member' level='[none:s_type:nk]' member='&quot;Regular&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;OT&quot;</bucket>
+              <bucket>&quot;REG&quot;</bucket>
+              <bucket>&quot;SO&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:s_type:nk]</column>
+            <column>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:era:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]' value='407' />
+            <format attr='display' class='0' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868745227:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868728842:qk]' scope='rows' value='false' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]' value='757' />
+            <format attr='cell-w' value='336' />
+            <format attr='cell-h' value='336' />
+            <format attr='cell' value='42' />
+            <format attr='cell-q' value='210' />
+            <format attr='text-format' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk]' value='p0.0%' />
+            <format attr='text-format' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:winner:qk]' value='p0.0%' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]' value='false' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='fill-color' id='annotation_1' value='#00000000' />
+            <format attr='stroke-size' id='annotation_1' value='0' />
+            <format attr='line-visibility' id='annotation_1' value='off' />
+            <format attr='fill-color' id='annotation_2' value='#00000000' />
+            <format attr='stroke-size' id='annotation_2' value='0' />
+            <format attr='line-visibility' id='annotation_2' value='off' />
+            <format attr='fill-color' id='annotation_3' value='#00000000' />
+            <format attr='stroke-size' id='annotation_3' value='0' />
+            <format attr='line-visibility' id='annotation_3' value='off' />
+            <format attr='fill-color' id='annotation_4' value='#00000000' />
+            <format attr='stroke-size' id='annotation_4' value='0' />
+            <format attr='line-visibility' id='annotation_4' value='off' />
+            <format attr='fill-color' id='annotation_5' value='#00000000' />
+            <format attr='stroke-size' id='annotation_5' value='0' />
+            <format attr='line-visibility' id='annotation_5' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='9' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Type:&#9;</run>
+                <run bold='true'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% of Total Count of Type along Table (Across):&#9;</run>
+                <run bold='true'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='809' />
+                <format attr='maxheight' value='809' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='10' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868745227:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]' />
+              <wedge-size column='[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk]' />
+              <lod column='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:type:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Type:&#9;</run>
+                <run bold='true'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% of Total Count of Type along Table (Across):&#9;</run>
+                <run bold='true'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:type:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='283' />
+                <format attr='maxwidth' value='283' />
+                <format attr='minheight' value='304' />
+                <format attr='maxheight' value='304' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='11' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868728842:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:winner:nk]' />
+              <wedge-size column='[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:winner:qk]' />
+              <lod column='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:winner:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Type:&#9;</run>
+                <run bold='true'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:winner:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% of Total Count of Type along Table (Across):&#9;</run>
+                <run bold='true'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:winner:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4832596778869629' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='283' />
+                <format attr='maxwidth' value='283' />
+                <format attr='minheight' value='304' />
+                <format attr='maxheight' value='304' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868745227:qk] + [federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868728842:qk])</rows>
+        <cols>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</cols>
+        <annotations>
+          <annotation class='point' id='1' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontname='Segoe UI' fontsize='30'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontname='Segoe UI' fontsize='30'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:type:qk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontname='Segoe UI' fontsize='30' italic='true'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868745227:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868745227:qk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>&quot; &quot;</value>
+                    <value>&quot;SO&quot;</value>
+                    <value>1</value>
+                    <value>0.12189936215450035</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='52' y='102' />
+          </annotation>
+          <annotation class='point' id='2' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontname='Segoe UI' fontsize='30'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontname='Segoe UI' fontsize='30'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:type:qk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontname='Segoe UI' fontsize='30' italic='true'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868745227:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:type:qk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868745227:qk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>1757</value>
+                    <value>&quot; &quot;</value>
+                    <value>&quot;OT&quot;</value>
+                    <value>1</value>
+                    <value>0.11320146897751433</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-57' y='106' />
+          </annotation>
+          <annotation class='point' id='3' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontname='Segoe UI' fontsize='30'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run fontname='Segoe UI' fontsize='30'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:type:qk]&gt;</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontname='Segoe UI' fontsize='30' italic='true'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868745227:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:type:qk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868745227:qk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:type:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>11872</value>
+                    <value>&quot; &quot;</value>
+                    <value>&quot;REG&quot;</value>
+                    <value>1</value>
+                    <value>0.76489916886798526</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-4' y='-203' />
+          </annotation>
+          <annotation class='point' id='4' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontname='Segoe UI' fontsize='30'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[none:winner:nk]&gt;</run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run fontalignment='1' fontname='Segoe UI' fontsize='30'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:winner:qk]&gt;</run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run bold='true' fontalignment='1' fontname='Segoe UI' fontsize='30' italic='true'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:winner:qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868728842:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:winner:qk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:winner:nk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868728842:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>6985</value>
+                    <value>&quot; &quot;</value>
+                    <value>&quot;Visitor&quot;</value>
+                    <value>0</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='159' y='-9' />
+          </annotation>
+          <annotation class='point' id='5' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontname='Segoe UI' fontsize='30'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[none:winner:nk]&gt;</run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run fontalignment='1' fontname='Segoe UI' fontsize='30'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:winner:qk]&gt;</run>
+              <run fontalignment='1'>Æ&#10;</run>
+              <run bold='true' fontalignment='1' fontname='Segoe UI' fontsize='30' italic='true'>&lt;[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:winner:qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868728842:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:winner:qk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:winner:nk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[usr:Calculation_860750496868728842:qk]</field>
+                      <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[pcto:cnt:winner:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>8536</value>
+                    <value>&quot; &quot;</value>
+                    <value>&quot;Home&quot;</value>
+                    <value>0</value>
+                    <value>0.5499645641389086</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-148' y='-26' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{A58A84D3-1543-4E7D-B629-E4BC10F11A1E}' />
+    </worksheet>
+    <worksheet name='playoffs'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#f5f5f5' fontname='Segoe UI' fontsize='70'>NHL </run>
+            <run bold='true' fontalignment='1' fontcolor='#f5f5f5' fontname='Segoe UI' fontsize='70'>Playoff Games</run>
+            <run fontalignment='1' fontcolor='#f5f5f5' fontname='Segoe UI' fontsize='70'> by Final Score (2005-2019)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nhl' name='federated.0aunur11f5n60c1dshal60mqpzk9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0aunur11f5n60c1dshal60mqpzk9'>
+            <column-instance column='[final_score]' derivation='Count' name='[cnt:final_score:qk]' pivot='key' type='quantitative' />
+            <column caption='Era' datatype='string' name='[era]' role='dimension' type='nominal' />
+            <column caption='Final Score' datatype='string' name='[final_score]' role='dimension' type='nominal' />
+            <column caption='Goals Axis' datatype='string' name='[goals_axis]' role='dimension' type='nominal' />
+            <column-instance column='[era]' derivation='None' name='[none:era:nk]' pivot='key' type='nominal' />
+            <column-instance column='[final_score]' derivation='None' name='[none:final_score:nk]' pivot='key' type='nominal' />
+            <column-instance column='[goals_axis]' derivation='None' name='[none:goals_axis:nk]' pivot='key' type='nominal' />
+            <column-instance column='[s_type]' derivation='None' name='[none:s_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='S Type' datatype='string' name='[s_type]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:era:nk]' filter-group='3'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:era:nk]' member='&quot;3on3-SO&quot;' />
+              <groupfilter function='member' level='[none:era:nk]' member='&quot;4on4-SO&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:s_type:nk]' filter-group='5'>
+            <groupfilter function='member' level='[none:s_type:nk]' member='&quot;Playoffs&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;4OT&quot;</bucket>
+              <bucket>&quot;3OT&quot;</bucket>
+              <bucket>&quot;2OT&quot;</bucket>
+              <bucket>&quot;SO&quot;</bucket>
+              <bucket>&quot;OT&quot;</bucket>
+              <bucket>&quot;REG&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:s_type:nk]</column>
+            <column>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:era:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' scope='rows' value='' />
+            <encoding attr='space' class='1' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' field-type='quantitative' fold='true' max='1290' min='-52' range-type='fixed' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='1' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' scope='rows' value='false' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' field-type='quantitative' scope='rows' type='space' />
+            <format attr='auto-subtitle' class='0' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' scope='rows' value='false' />
+            <format attr='height' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:final_score:nk]' value='139' />
+            <format attr='width' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' value='183' />
+            <format attr='border-color' value='#b0b0b0' />
+            <format attr='border-width' value='1' />
+            <format attr='tick-color' value='#ffffff' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#ffffff' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:final_score:nk]' value='74' />
+            <format attr='font-size' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:goals_axis:nk]' value='8' />
+            <format attr='font-family' value='Segoe UI' />
+            <format attr='cell-w' value='450' />
+            <format attr='cell-h' value='13500' />
+            <format attr='cell' value='150' />
+            <format attr='cell-q' value='750' />
+            <format attr='text-align' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:final_score:nk]' value='auto' />
+            <format attr='wrap' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:final_score:nk]' value='auto' />
+            <format attr='border-width' scope='cols' value='0' />
+            <format attr='border-style' scope='cols' value='none' />
+            <format attr='wrap' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:goals_axis:nk]' value='auto' />
+            <format attr='border-color' scope='rows' value='#ffffff' />
+            <format attr='border-width' scope='rows' value='0' />
+            <format attr='border-style' scope='rows' value='none' />
+            <format attr='font-weight' data-class='total' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' value='normal' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:goals_axis:nk]' value='54' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-color' scope='rows' value='#ffffff' />
+            <format attr='border-width' scope='rows' value='0' />
+            <format attr='border-style' scope='rows' value='none' />
+            <format attr='border-style' scope='cols' value='solid' />
+            <format attr='border-color' scope='cols' value='#666666' />
+            <format attr='border-width' scope='cols' value='3' />
+            <format attr='border-width' data-class='subtotal' scope='cols' value='0' />
+            <format attr='border-style' data-class='subtotal' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='field-labels-spanner'>
+            <format attr='background-color' scope='cols' value='#00000000' />
+            <format attr='background-color' scope='rows' value='#00000000' />
+            <format attr='font-weight' scope='cols' value='normal' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' value='n#,##0;-#,##0' />
+            <format attr='font-family' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:goals_axis:nk]' value='Segoe UI' />
+            <format attr='font-family' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' value='Segoe UI' />
+            <format attr='font-family' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:final_score:nk]' value='Segoe UI' />
+            <format attr='text-align' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:final_score:nk]' value='auto' />
+            <format attr='text-orientation' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:final_score:nk]' value='-90' />
+            <format attr='vertical-align' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:final_score:nk]' value='auto' />
+            <format attr='text-orientation' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:goals_axis:nk]' value='0' />
+            <format attr='wrap' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:goals_axis:nk]' value='auto' />
+            <format attr='font-weight' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:final_score:nk]' value='bold' />
+            <format attr='font-weight' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:goals_axis:nk]' value='bold' />
+            <format attr='font-size' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:goals_axis:nk]' value='29' />
+            <format attr='font-size' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:final_score:nk]' value='29' />
+            <format attr='font-size' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' value='29' />
+            <format attr='font-weight' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' value='normal' />
+            <format attr='color' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' value='#ffffff' />
+            <format attr='color' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:final_score:nk]' value='#ffffff' />
+            <format attr='color' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:goals_axis:nk]' value='#ffffff' />
+            <format attr='font-style' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' value='normal' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+            <format attr='border-width' scope='cols' value='0' />
+            <format attr='border-style' scope='cols' value='none' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-color' scope='rows' value='#ffffff' />
+            <format attr='border-color' data-class='total' scope='rows' value='#f5f5f5' />
+            <format attr='border-color' data-class='subtotal' scope='rows' value='#ffffff' />
+            <format attr='border-width' scope='rows' value='0' />
+            <format attr='border-style' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='row-levels' value='2' />
+            <format attr='col-levels' value='2' />
+            <format attr='row-horiz-levels' value='1' />
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-size' value='28' />
+            <format attr='font-family' value='Segoe UI' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-color' value='#ffffff' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' value='#ffffff4b' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#212121' />
+            <format attr='stroke-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-color' value='#ffffff' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='cols' value='1' />
+            <format attr='stroke-size' scope='cols' value='3' />
+            <format attr='stroke-color' scope='cols' value='#666666' />
+            <format attr='div-level' scope='rows' value='1' />
+            <format attr='stroke-color' scope='rows' value='#666666' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='4' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-color' scope='rows' value='#ffffff' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='top' />
+                <format attr='text-align' value='center' />
+                <format attr='text-orientation' value='0' />
+                <format attr='wrap' value='off' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='4' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='1769' />
+                <format attr='maxheight' value='1769' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-color' value='#ffffff67' />
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='top' />
+                <format attr='text-align' value='center' />
+                <format attr='text-orientation' value='0' />
+                <format attr='wrap' value='off' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='4' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='1.8570718765258789' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='has-stroke' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-color' value='#ffffff67' />
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='top' />
+                <format attr='wrap' value='off' />
+                <format attr='text-orientation' value='-90' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='Segoe UI' />
+                <format attr='font-size' value='32' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='size' value='1.7361326217651367' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='0' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-color' value='#ffffff67' />
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk] + [federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk])</rows>
+        <cols>([federated.0aunur11f5n60c1dshal60mqpzk9].[none:goals_axis:nk] / [federated.0aunur11f5n60c1dshal60mqpzk9].[none:final_score:nk])</cols>
+      </table>
+      <simple-id uuid='{7F57D2DA-CC5A-4663-AD92-6C3E780941F1}' />
+    </worksheet>
+    <worksheet name='regular_season'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#f5f5f5' fontname='Segoe UI' fontsize='70'>NHL </run>
+            <run bold='true' fontalignment='1' fontcolor='#f5f5f5' fontname='Segoe UI' fontsize='70'>Regular Season Games</run>
+            <run fontalignment='1' fontcolor='#f5f5f5' fontname='Segoe UI' fontsize='70'> by Final Score (2005-2019)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='nhl' name='federated.0aunur11f5n60c1dshal60mqpzk9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0aunur11f5n60c1dshal60mqpzk9'>
+            <column-instance column='[final_score]' derivation='Count' name='[cnt:final_score:qk]' pivot='key' type='quantitative' />
+            <column caption='Era' datatype='string' name='[era]' role='dimension' type='nominal' />
+            <column caption='Final Score' datatype='string' name='[final_score]' role='dimension' type='nominal' />
+            <column caption='Goals Axis' datatype='string' name='[goals_axis]' role='dimension' type='nominal' />
+            <column-instance column='[era]' derivation='None' name='[none:era:nk]' pivot='key' type='nominal' />
+            <column-instance column='[final_score]' derivation='None' name='[none:final_score:nk]' pivot='key' type='nominal' />
+            <column-instance column='[goals_axis]' derivation='None' name='[none:goals_axis:nk]' pivot='key' type='nominal' />
+            <column-instance column='[s_type]' derivation='None' name='[none:s_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='S Type' datatype='string' name='[s_type]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:era:nk]' filter-group='3'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:era:nk]' member='&quot;3on3-SO&quot;' />
+              <groupfilter function='member' level='[none:era:nk]' member='&quot;4on4-SO&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:s_type:nk]' filter-group='4'>
+            <groupfilter function='member' level='[none:s_type:nk]' member='&quot;Regular&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;SO&quot;</bucket>
+              <bucket>&quot;OT&quot;</bucket>
+              <bucket>&quot;REG&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:s_type:nk]</column>
+            <column>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:era:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' scope='rows' value='' />
+            <encoding attr='space' class='1' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' field-type='quantitative' fold='true' max='1290' min='-52' range-type='fixed' scope='rows' synchronized='true' type='space' />
+            <format attr='display' class='1' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' scope='rows' value='false' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' field-type='quantitative' major-origin='0' major-spacing='200' scope='rows' type='space' />
+            <format attr='auto-subtitle' class='0' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' scope='rows' value='false' />
+            <format attr='height' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:final_score:nk]' value='139' />
+            <format attr='width' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' value='183' />
+            <format attr='border-color' value='#b0b0b0' />
+            <format attr='border-width' value='1' />
+            <format attr='tick-color' value='#ffffff' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#ffffff' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:final_score:nk]' value='74' />
+            <format attr='font-size' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:goals_axis:nk]' value='8' />
+            <format attr='font-family' value='Segoe UI' />
+            <format attr='cell-w' value='450' />
+            <format attr='cell-h' value='13500' />
+            <format attr='cell' value='150' />
+            <format attr='cell-q' value='750' />
+            <format attr='text-align' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:final_score:nk]' value='auto' />
+            <format attr='wrap' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:final_score:nk]' value='auto' />
+            <format attr='border-width' scope='cols' value='0' />
+            <format attr='border-style' scope='cols' value='none' />
+            <format attr='wrap' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:goals_axis:nk]' value='auto' />
+            <format attr='border-color' scope='rows' value='#ffffff' />
+            <format attr='border-width' scope='rows' value='0' />
+            <format attr='border-style' scope='rows' value='none' />
+            <format attr='font-weight' data-class='total' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' value='normal' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:goals_axis:nk]' value='54' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-color' scope='rows' value='#ffffff' />
+            <format attr='border-width' scope='rows' value='0' />
+            <format attr='border-style' scope='rows' value='none' />
+            <format attr='border-color' scope='cols' value='#666666' />
+            <format attr='border-style' scope='cols' value='solid' />
+            <format attr='border-width' scope='cols' value='3' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='field-labels-spanner'>
+            <format attr='background-color' scope='cols' value='#00000000' />
+            <format attr='background-color' scope='rows' value='#00000000' />
+            <format attr='font-weight' scope='cols' value='normal' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' value='n#,##0;-#,##0' />
+            <format attr='font-family' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:goals_axis:nk]' value='Segoe UI' />
+            <format attr='font-family' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' value='Segoe UI' />
+            <format attr='font-family' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:final_score:nk]' value='Segoe UI' />
+            <format attr='text-align' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:final_score:nk]' value='auto' />
+            <format attr='text-orientation' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:final_score:nk]' value='-90' />
+            <format attr='vertical-align' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:final_score:nk]' value='auto' />
+            <format attr='text-orientation' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:goals_axis:nk]' value='0' />
+            <format attr='wrap' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:goals_axis:nk]' value='auto' />
+            <format attr='font-weight' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:final_score:nk]' value='bold' />
+            <format attr='font-weight' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:goals_axis:nk]' value='bold' />
+            <format attr='font-size' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:goals_axis:nk]' value='29' />
+            <format attr='font-size' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:final_score:nk]' value='29' />
+            <format attr='font-size' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' value='29' />
+            <format attr='font-weight' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' value='normal' />
+            <format attr='color' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' value='#ffffff' />
+            <format attr='color' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:final_score:nk]' value='#ffffff' />
+            <format attr='color' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:goals_axis:nk]' value='#ffffff' />
+            <format attr='font-style' field='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' value='normal' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-color' scope='rows' value='#ffffff' />
+            <format attr='border-color' data-class='total' scope='rows' value='#f5f5f5' />
+            <format attr='border-color' data-class='subtotal' scope='rows' value='#ffffff' />
+            <format attr='border-width' scope='rows' value='0' />
+            <format attr='border-style' scope='rows' value='none' />
+            <format attr='border-width' scope='cols' value='0' />
+            <format attr='border-style' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='row-levels' value='2' />
+            <format attr='col-levels' value='2' />
+            <format attr='row-horiz-levels' value='1' />
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-size' value='28' />
+            <format attr='font-family' value='Segoe UI' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-color' value='#ffffff' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' value='#ffffff4b' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-color' scope='rows' value='#212121' />
+            <format attr='stroke-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-color' value='#ffffff' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='cols' value='1' />
+            <format attr='stroke-color' scope='cols' value='#666666' />
+            <format attr='div-level' scope='rows' value='1' />
+            <format attr='stroke-color' scope='rows' value='#666666' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='4' />
+            <format attr='stroke-size' scope='cols' value='3' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-color' scope='rows' value='#ffffff' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='top' />
+                <format attr='text-align' value='center' />
+                <format attr='text-orientation' value='0' />
+                <format attr='wrap' value='off' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='4' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='1769' />
+                <format attr='maxheight' value='1769' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-color' value='#ffffff67' />
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='top' />
+                <format attr='text-align' value='center' />
+                <format attr='text-orientation' value='0' />
+                <format attr='wrap' value='off' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='4' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='size' value='1.7911050319671631' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='has-stroke' value='true' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-color' value='#ffffff67' />
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='top' />
+                <format attr='wrap' value='off' />
+                <format attr='text-orientation' value='-90' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='Segoe UI' />
+                <format attr='font-size' value='32' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='size' value='1.7911050319671631' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='0' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-color' value='#ffffff67' />
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk] + [federated.0aunur11f5n60c1dshal60mqpzk9].[cnt:final_score:qk])</rows>
+        <cols>([federated.0aunur11f5n60c1dshal60mqpzk9].[none:goals_axis:nk] / [federated.0aunur11f5n60c1dshal60mqpzk9].[none:final_score:nk])</cols>
+      </table>
+      <simple-id uuid='{7E586EA9-057A-4FAE-9FAA-265BC5C1569B}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Playoffs'>
+      <style />
+      <size maxheight='2160' maxwidth='3840' minheight='2160' minwidth='3840' sizing-mode='fixed' />
+      <zones>
+        <zone h='76481' id='5' name='pie_regular' show-title='false' w='20078' x='76771' y='12593' />
+        <zone h='100000' id='30' is-centered='0' is-scaled='1' param='C:/Users/Pedram/Desktop/python/nhl/nhl2.jpg' type='bitmap' w='100000' x='0' y='0' />
+        <zone h='100000' id='34' name='playoffs' w='100000' x='0' y='0' />
+        <zone h='75926' id='35' name='pie_playoffs' show-title='false' w='31042' x='71120' y='12130' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1200' minheight='1200' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='52' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='99260' id='53' param='vert' type='layout-flow' w='99584' x='208' y='370'>
+                <zone fixed-size='280' h='100000' id='30' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/Pedram/Desktop/python/nhl/nhl2.jpg' type='bitmap' w='100000' x='0' y='0'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='100000' id='34' is-fixed='true' name='playoffs' w='100000' x='0' y='0'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='75926' id='35' is-fixed='true' name='pie_playoffs' show-title='false' w='31042' x='71120' y='12130'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='76481' id='5' is-fixed='true' name='pie_regular' show-title='false' w='20078' x='76771' y='12593'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C6E04B0F-93A1-48B4-A2C6-26907A4A2C1E}' />
+    </dashboard>
+    <dashboard name='Regular Season'>
+      <style />
+      <size maxheight='2160' maxwidth='3840' minheight='2160' minwidth='3840' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='30' is-centered='0' is-scaled='1' param='C:/Users/Pedram/Desktop/python/nhl/nhl2.jpg' type='bitmap' w='100000' x='0' y='0' />
+        <zone h='100000' id='3' name='regular_season' w='100000' x='-807' y='0' />
+        <zone h='76481' id='5' name='pie_regular' show-title='false' w='20078' x='76771' y='12593' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='900' minheight='900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='51' type='layout-basic' w='100000' x='0' y='0'>
+              <zone h='99260' id='52' param='vert' type='layout-flow' w='99584' x='208' y='370'>
+                <zone fixed-size='280' h='100000' id='3' is-fixed='true' name='regular_season' w='100000' x='-807' y='0'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='100000' id='30' is-centered='0' is-fixed='true' is-scaled='1' param='C:/Users/Pedram/Desktop/python/nhl/nhl2.jpg' type='bitmap' w='100000' x='0' y='0'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='76481' id='5' is-fixed='true' name='pie_regular' show-title='false' w='20078' x='76771' y='12593'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{3D511B8E-43BB-4394-B2A7-31008706C05F}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='regular_season'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281248927744:qk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281260412930:qk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281260478467:qk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281260523524:qk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281260826629:qk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:era:nk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:final_score:nk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:goals:ok]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:goals_axis:nk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:h_team:nk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:s_type:nk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:season:nk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[sum:goals:qk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='4' />
+      </viewpoint>
+      <simple-id uuid='{CFCD5323-9440-4D92-8135-DA1E07E53D9E}' />
+    </window>
+    <window class='worksheet' name='pie_regular'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='11' param='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:winner:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[:Measure Names]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[min:Calculation_137641281315819541:nk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:ok]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281319555095:qk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281319579672:qk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281319596057:qk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281323876379:qk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281323925532:qk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281324077085:qk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_860750496867672070:qk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:era:nk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:s_type:nk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:winner:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BB2AF0E7-4513-4A27-9DE0-4542F65F2A54}' />
+    </window>
+    <window class='worksheet' name='playoffs'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281248927744:qk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281260412930:qk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281260478467:qk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281260523524:qk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281260826629:qk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:era:nk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:final_score:nk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:goals:ok]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:goals_axis:nk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:h_team:nk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:s_type:nk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:season:nk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[sum:goals:qk]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='4' />
+      </viewpoint>
+      <simple-id uuid='{717B61AE-1077-40C9-A4BD-03AEA16C6A01}' />
+    </window>
+    <window class='worksheet' name='pie_playoffs'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='11' param='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:winner:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[:Measure Names]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[min:Calculation_137641281315819541:nk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:nk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281315819541:ok]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281319555095:qk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281319579672:qk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281319596057:qk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281323876379:qk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281323925532:qk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_137641281324077085:qk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:Calculation_860750496867672070:qk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:era:nk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:s_type:nk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:type:nk]</field>
+            <field>[federated.0aunur11f5n60c1dshal60mqpzk9].[none:winner:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4D5F20E8-2DAA-4F9E-A281-4D86B1BE91DA}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Regular Season'>
+      <viewpoints>
+        <viewpoint name='pie_regular' />
+        <viewpoint name='regular_season'>
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{2374A9D7-483F-4605-9541-9BE639A0D61D}' />
+    </window>
+    <window class='dashboard' name='Playoffs'>
+      <viewpoints>
+        <viewpoint name='pie_playoffs'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0aunur11f5n60c1dshal60mqpzk9].[none:winner:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='pie_regular' />
+        <viewpoint name='playoffs'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='34' />
+      <simple-id uuid='{984D8909-22A5-45BC-AC61-335A0CCEA01A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Playoffs' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Regular Season' width='192'>
+      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
+      GiTNcW/DQK3pnm+O6+Pjw65du0hKSiInJ+e/E2o0bN++neDgYHJycggJCSE9PZ36+nrc3d31
+      69na2lJVVWXQMXrIkCFcvnzZ2JKEuG1G7wE2bdpEdHQ0NTU1+jFPT090Op2+MzTA4cOHWbZs
+      Ga2trSQmJuLs7Iyvry/V1dU0NTXR3NzMxIkTKSsrIzg4mLVr15q2RULcBqMD0N3dbdAaffPm
+      zcyZM4ft27cbhOLjjz+mq6uLtrY2Vq5cSXp6OnV1dbz44osAxMbGkpKSwqBBg1ixYoXBYZIQ
+      d5rRAVi8ePF1Yz//+c+v6w/68ssv678uKCigoKDAYPnly5eJjIw0tgwhTGLWK0+//vWvzTmd
+      EHecXHoVqiYBEKomARCqJgEQqiYBEKomARCqJgEQqiYBEKomARCqJgEQqiYBEKomARCqJgEQ
+      qiYBEKomARCqJgEQqiYBEKomARCqJgEQqiYBEKpmdAACAwPZvXs32dnZzJ4922CZg4MDmzZt
+      4sCBAyQkJGBtbQ1AUFAQe/bsITMzE19fXwCGDh3Kzp07yc7OJjQ01PgtEcIIRgdg2LBhREdH
+      ExUVRVJSkkGHNw8PD/bu3cu8efOwsbFh4cKFaLVaNm/eTHR0NBs2bGDbtm0AbNmyhe3btxMV
+      FcXrr7+Oo6Oj6VslRB8Z3Rfo+PHj+q/r6+vRarW0t7cDUFZWRllZGQCffvopbm5uTJo0iaKi
+      IpqammhqasLR0RFnZ2e8vb0pLi4G4MSJEwQHB/P++++bsElC9J3JLXwfffRRamtraWpqum6Z
+      k5MTixcvZvny5UydOpWvv/5av+zq1auMGDGC1tZW/VhtbS3Dhg0jICBAukP30UCtSRXdoaOj
+      o5k4cSLLly+/btm4ceNISkoiPj6er776ip6eHv25AICVlRUdHR1YWVn9txgbG9rb26U79G0Y
+      qDXd892hY2Nj0Wg0xMTEXFeoj48P69atIzIykvPnzwNw4cIFJk6cCFy7eYadnR0VFRW4urrq
+      gzFhwgQ++ugjY0sS4rYZvQdYsmQJBw4cYPXq1QAcOXKECRMmUFJSQmhoKJ2dnfz2t78F4Msv
+      v2T37t3odDqSk5MZOXIkO3bsoLe3l4yMDDIzM/niiy+oqamhsrLSPFsmRB8YHYAXXnjB4Bit
+      pqaGWbNmsX//furq6igqKtIva2xsBCAqKorg4GBqa2spLy8HYMeOHeTl5eHg4KC/g4wQlmJ0
+      AD744IPrxv72t7/R0dFBRUUFFRUV1y1XFIXCwsLrxi9dumRsGUKYxKxXgo8ePWrO6YS44+Sj
+      EELVJABC1SQAQtUkAELVJABC1SQAQtUkAELVJABC1SQAQtUkAELVJABC1SQAQtUkAELVJABC
+      1SQAQtUkAELVJABC1SQAQtUkAELVJABC1f4fEBKy5W6t/gEAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='pie_playoffs' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='pie_regular' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='playoffs' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFJklEQVR4nO3dP0trdwDG8cfbmvgHWmjSDmogt1J8A3ctONR0k0wZnPIG1JfkoC9AR49o
+      HERjuS3oIgW5Sk1txRSrqVbxxNOhWLAECia/xPp8P6NDnpzhS04C52dfkiSJAFNvev0GgF76
+      uNdv4KVpNBq6vb3t9dtAlxDAv6ysrOj+/l7pdDroTq1W0/X1tSYmJoLuSNLW1pbevXungYGB
+      4Fvd0qlrIoAWpqenlclkgm5EUaTT01PNzMwE3ZGkarWq6elpZbPZ4Fvdsru725Fr4jsArBEA
+      rBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArBEArPVxKsRTS0tL
+      Ojs7U39/f9Cder2uu7s7jY6OBt2RpIODA42PjyuVSgXf6pZOXROPRLZQLpe79khkuVwOuiNJ
+      c3NzKpfLr+qRyPn5+Y5cE7dAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYA
+      sEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsMaxKC1EUaTBwcGgG0dHR2o0GlpeXg66I0lx
+      HGttbS34NXVTHMeKokhDQ0NtvQ4BtFAoFLp2LlCxWAy6I0kbGxuampp6VecCVSoVFQoFzgUC
+      2kEAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYA
+      sEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsEYAsMbp0C24HY8+NjamXC6narWqJEkkSfl8
+      XiMjI9rZ2fnnbyMjI8rn80/+1iudOh5dCZ5YXFxM6vV68J3V1dVkYWEh+E6SJMns7Gxyfn7e
+      la1umZub68g1cQsEawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQA
+      awQAawQAawQAawQAazwUb+K3H3/VRfXnoBu5r7/SwKdtPqTeZQRgonkXK27cBd1Imr09KeI5
+      uAWCNT4BTHwRnynz509hRx7GJQ2H3egwArCRqK/Xb+EF4hYI1vgEMPFH7Rc1v/sh6MZn33yr
+      /qALnUcAJpq3t7r7/TLoRtJsBn39ELgFgjU+AVp4jadDn5yc6MvAO5ubm7rZ2wu88rdOnQ5N
+      AC0UCgVlMpmgG1EU6fT0VMViMeiOJG1sbCiXy0lHx0F3JicnlXr7NujGo0qlokKhoGw229br
+      cAsEawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQA
+      awQAawQAawQAawQAawQAawQAawQAawQAawQAawQAaxyO2wKnQz8Pp0O/EpwO/TycDg38zxAA
+      rBEArPEdoIXt7e22v1z9l8PDQ11eXmp9fT3ojiQ1m019f36uN6mw/8Pxk/fv9dGHD0E3HsVx
+      rO3tbQ0Pt/ePuQmghVqtplQqFXTj4uJCNzc3Oj4+DrojSQ8PD6p/nlV6bDTozuXVlXR1FXTj
+      UZIkqtVqSqfTbb0OAbRQKpW69itQuVwOuiNJe3t7KpVKbf9i8pLs7+935Jr4DgBrBABrBABr
+      BABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABr
+      BABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABrBABr
+      BABrBABrBABrBABrBABrBABrBABrBABrfwFfAUDMB/ySagAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='regular_season' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAFzklEQVR4nO3dTUtcZxjG8escR2ecTCS+tA41pCgUiUZoIRSy6KKLFgLFDpQaCFnMJ0i2
+      3bXLQj9GXXRVdCsM3UgnCUqIATUtbVq1RouJ0Ul8ybx1U0pTDoQ082jI9f+t3PjccyN/5xzQ
+      M1Gz2WwKMBUf9wsAjlPquF/Aq6ZSqejg4OC4XwaOCAH8x/T0tKrVqtLpdNA5a2trevLkiYaH
+      h4POkaTZ2VmdP39emUwm+Kyj0qqdCCDB+Pi4ent7g86YmZnR+vq6Ll++HHSOJF2/fl3j4+Pq
+      6+sLPuuo3LhxoyU7cQ8AawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQAawQA
+      awQAawQAawQAaxFPhXjW5OSkNjc31d7eHnTO1taWDg8PNTAwEHSOJC0tLWlwaEjVergZ6faU
+      OtrbJEn7hzXV6uGGncymW7YT/xKZoFgsHtm/RBaLxaBzJOnq1av6+JPP9OW3N4PNuPLRmD7/
+      cFSS9M13P+rmwkqQOW1xpO+/uKRr1661ZCcugWCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCN
+      AGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCNAGCN
+      AGCNAGCNAGCNx6MnqNaf6t6DX4Kd353t+efrH27d0737j4LMiaNIxYvvBjn7dUEACf58vKmv
+      Z78Kdv6l966oU12SpLnldc3eWQ0yJ9UWE8BzcAkEawQAa1wCJVheWg56/srKijrvd2l7e1tb
+      nT3P/4b/qdFoqFwuq16va3k58E6rqyqXdyVJD7a2gs1pNpst3YkAEvTn89KDcOf39PSo87BL
+      1WpVB5kTkvaCzImiSIODg4rjWPn+vKTdIHMkqae7W4ODb0uSTtzdV6id9MxO/XrZnQggQXf3
+      qaDn53I5deZy2t3dVSadCTYniiLl83lFUaRTR7BTPp+XJGUyvwabE0n/2qn7pc/jHgDWCADW
+      CADWuAdIcDIV69P+bLDz3znRrrVgp+NFEECCXFusi2+GCyCdTRHAK4JLIFgjAFgjAFgjAFgj
+      AFgjAFgjAFgjAFgjAFgjAFgjAFjjb4ESbO+nNX1zJNj5H7z/hqQwj0LBiyGABHvVlGZ/fyvY
+      +YPDOXURwCuBSyBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY
+      IwBYIwBYIwBYIwBYIwBYIwBYIwBY47EoCcrlskL+blhcXNTJw1VVKhU9zIb7LLJGo6GpqSnV
+      arW/d2oLNmtxaUlTOz9Lkv5YexpsTqPZbOlOvAMkuHDhQtDzR0ZGNDo6qjNnzmhgYCDYnDiO
+      VSgUlEqlwu909qwKhYIKhYIGTp8ONieOopbuRACwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCw
+      RgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCw
+      RgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwRgCwxgdlJ1i4Nafs/mqw81fuNpSp
+      P9LOzo4ep2rK7m8HmRPHsUqlkur1uu7cmg+70091lRobkqRHq78pu/8wyJw4jlQqlVSr1XSn
+      BT+nqNlsNlv02l4Lk5OTqlQq6ujoCDpnY2NDe3t7GhoaCjpHkubm5jQ2NqZ0Oh181lGZn5/X
+      uXPnXnon3gESTExMqLe3N+iMmZkZra+vq1gsBp0jSbdv39bExIT6+vqCzzoqCwsLLdmJewBY
+      IwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY
+      IwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY
+      IwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY+wuYMT+XEpevggAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
